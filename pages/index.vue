@@ -27,7 +27,7 @@
           </v-btn>
         </div>
       </div>
-      <!-- <div class="container-tasks" v-if="searchTasks.length === 0">Ничего не найдено</div> -->
+      <div class="container-tasks" v-if="searchTasks.length === 0">Ничего не найдено</div>
       <div class="container-tasks" v-if="tasks.length === 0">Список задач пуст</div>
       <div class="task" v-else v-for="(task, index) in searchTasks" :key="task.id">
         {{ index + 1 }}. {{ task.title }}
